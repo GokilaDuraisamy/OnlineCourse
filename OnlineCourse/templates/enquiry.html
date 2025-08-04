@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Enquiry - eCourses</title>
+    <link rel="stylesheet" href="{% static 'css/enquiry2.css' %}">
+</head>
+
+<body>
+    
+    {% include 'templates/navbar.html' %}
+
+    <div class="enquiry-container">
+        <div class="enquiry-form-box">
+            <h2>Course Enquiry</h2>
+            <p>Have a question about a course? Ask us below!</p>
+
+            <form method="post" action="{%url 'Registration:process_enquiry' %}">
+                {% csrf_token %}
+
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="course">Course Name:</label>
+                <select id="courses" name="courses" required>
+                    <option value="" disabled selected>Select a course</option>
+                    <option value="python-django">Python (Django)</option>
+                    <option value="scratch">Scratch Programming</option>
+                    <option value="fullstack">Full Stack Development</option>
+                </select>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+
+                <input type="submit" value="Send Enquiry">
+            </form>
+        </div>
+    </div>
+    {% if messages %}
+    <script>
+        {% for message in messages %}
+        alert("Thank You!!{{name}} {{ message }}");
+        {% endfor %}
+    </script>
+    {% endif %}
+    {% include 'templates/footer.html' %}
+   
+    
+</body>
+
+</html>

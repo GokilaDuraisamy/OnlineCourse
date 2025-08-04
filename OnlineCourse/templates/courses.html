@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+{%load static %}
+<link rel="stylesheet" href="{% static 'css/courses.css' %}">
+
+<head>
+
+    <title>ECOURSES </title>
+</head>
+
+<body>
+    <div id="courses-section">
+        <div class="courses-heading">
+            <h1>COURSES</h1><br>
+            <hr>
+        </div>
+        <div class="courses">
+            <div class="course-card">
+                <img src="{% static 'images/python-1.jpg' %}">
+                <p class="courses-text-small">Python (Django) </p>
+                <button onclick="location.href='/courses1'">Know More..</button>
+            </div>
+            <div class="course-card">
+                <img src="{% static 'images/scratch-img1.png' %}">
+                <p class="courses-text-small">Scratch Programming </p>
+                <button onclick="location.href='/courses2'">Know More..</button>
+            </div>
+            <div class="course-card">
+                <img src="{% static 'images/front-end-images.jpeg' %}">
+                <p class="courses-text-small">Front End Development </p>
+                <button onclick="location.href='/courses3'">Know More..</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

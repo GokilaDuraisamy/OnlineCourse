@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+{%load static %}
+<link rel="stylesheet" href="{% static 'css/index1.css' %}">
+
+<head>
+
+    <title>ECOURSES </title>
+    <script src="https://kit.fontawesome.com/355e187699.js" crossorigin="anonymous"></script>
+    
+
+</head>
+
+<body>
+    <div class="topbar">
+        <div class="topbar_title">
+            <h1>E COURSES</h1>
+        </div>
+
+        <div class="topbar_office">
+            <div class="office_image">
+             <i class="fa-solid fa-location-dot" style='font-size:30px;color:red'></i>
+             </div>
+             <div class="office_content">
+                    <h4>Our office</h4>
+                     <h6>Bodipatti, udumalpet,India</h6>
+            </div>
+        </div>
+
+        <div class="topbar_email">
+            <div class="email_image">
+            <i class="fa-solid fa-envelope" style='font-size:30px;color:red'></i>
+            </div>
+            <div class="email_content">
+                 <h4>Email Us</h4>
+                 <h6>code2designweb@gmail.com</h6>
+            </div>
+        </div>
+
+
+        <div class="topbar_contact">
+             <div class="contact_image">
+            <i class="fa-solid fa-phone" style='font-size:30px;color:red'></i>
+             </div>
+            <div class="contact_content">
+                <h4>Call Us</h4>
+                <h6>+012 345 6789</h6>
+            </div>
+        </div>
+    </div>
+
+
+    {% include 'templates/navbar.html' %}
+     {% include 'templates/home.html' %}
+      {% include 'templates/aboutus.html' %}
+       {% include 'templates/courses.html' %}
+        {% include 'templates/footer.html' %}
+    
+
+</body>
+
+</html>

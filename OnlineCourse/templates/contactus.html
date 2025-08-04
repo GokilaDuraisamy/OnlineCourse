@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+{%load static %}
+<link rel="stylesheet" href="{% static 'css/contactus2.css' %}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECOURSES </title>
+</head>
+
+<body>
+
+    {% include 'templates/navbar.html' %}
+    <div class="contactus">
+        <div class="contact-image">
+            <img src="{% static 'images/cat-7.jpg' %}" alt="Contact Image">
+        </div>
+        <div class="contact-form">
+            <form method="post" action="{%url 'Registration:process_contactus' %}">
+                {% csrf_token %}
+                <h3>Contact Us</h3>
+                <p>Name:</p>
+                <input type="text" id="fname" name="fname" placeholder="Enter your name" required>
+                <p>Email:</p>
+                <input type="email" id="empid" name="empid" placeholder="Enter email address" required>
+                <p>Type Your Message Here:</p>
+                <textarea id="message" name="message" cols="30" rows="5" placeholder="Enter your message"
+                    required></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+
+
+
+        </div>
+    </div>
+    {% if messages %}
+    <script>
+        {% for message in messages %}
+        alert("Thank You!!{{fname}} {{ message }}");
+        {% endfor %}
+    </script>
+    {% endif %}
+    {% include 'templates/footer.html' %}
+</body>
+
+</html>

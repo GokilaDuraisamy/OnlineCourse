@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+{%load static %}
+<link rel="stylesheet" href="{% static 'css/courses1a.css' %}">
+
+<head>
+
+    <title>ECOURSES </title>
+</head>
+
+<body>
+     {% include 'templates/navbar.html' %}
+    <div class="courses-content">
+        <h2>Python (Django)-Learn Back-End Web Development</h2>
+        <p><b>Level:</b> Intermediate<br>
+            <b>Duration:</b> 6 Weeks<br>
+            <b>Prerequisites:</b> Basic knowledge of Python<br>
+        </p>
+        <h3>Course Overview:</h3>
+        <p>Master the art of building powerful web applications using Django, the high-level Python web framework.
+            This course guides you step-by-step through back-end development — from building your first app to
+            deploying your project online.</p>
+        <h3>What You'll Learn:</h3>
+        <ul>
+            <li>Introduction to Django architecture</li>
+            <li>Working with models, views, and templates (MVT)</li>
+            <li>Setting up a database and admin panel</li>
+            <li>User authentication and session management</li>
+            <li>Building CRUD applications</li>
+            <li>Deploying Django projects to the web</li>
+        </ul>
+        <h3>Who Should Join:</h3>
+        <p>Aspiring back-end developers, Python enthusiasts, and anyone looking to build robust, database-driven
+            websites.
+        </p>
+        <h3>Course Fee:</h3>
+        <p>3,000 INR
+        </p>
+        <button onclick="location.href='/enquiry'">Enquire Now</button>
+    </div>
+     {% include 'templates/footer.html' %}
+</body>
+
+</html>

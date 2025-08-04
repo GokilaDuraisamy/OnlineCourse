@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+{%load static%}
+<link rel="stylesheet" href="{% static 'css/navbar5.css' %}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecourses</title>
+
+</head>
+
+<body>
+    <nav class="navbar">
+
+        <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="#" onclick="scrollToaboutus()">About us</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn" onclick="scrollTocourses()">Courses
+                    <i class="fa-solid fa-caret-down" style='font-size:20px;color:black'></i></a>
+                <div class="dropdown-content">
+                    <a href="/courses1">Python (Django)</a>
+                    <a href="/courses2">Scratch</a>
+                    <a href="/courses3">Front End Development</a>
+                </div>
+            </li>
+            <li><a href="/contactus">Contact us</a></li>
+            <li><a href="/enquiry" class="button1">Enquiry</a></li>
+        </ul>
+
+    </nav>
+    <script>
+        function scrollToaboutus() {
+            const aboutusSection = document.getElementById('aboutus-section');
+            if (aboutusSection) {
+                aboutusSection.scrollIntoView({ behavior: 'smooth' });
+                aboutusSection.style.marginTop = "120px";
+            }
+
+        }
+        function scrollTocourses() {
+            const coursesSection = document.getElementById('courses-section');
+            if (coursesSection) {
+                coursesSection.scrollIntoView({ behavior: 'smooth' });
+                coursesSection.style.marginTop = "150px";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+/* Reset & Base Style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Container Styling */
+.courses-content {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    color: #333;
+    line-height: 1.8;
+}
+
+/* Headings */
+.courses-content h2 {
+    color: #d62828;
+    margin-bottom: 15px;
+    font-size: 32px;
+}
+
+.courses-content h3 {
+    color: #444;
+    margin-top: 30px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Paragraphs and Details */
+.courses-content p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+/* List Styling */
+.courses-content ul {
+    margin-top: 10px;
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+/* Enroll Button */
+.courses-content button {
+    margin-top: 30px;
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #ed4406;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.courses-content button:hover {
+    background-color: #c13205;
+}

@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    
+}
+
+
+.topbar {
+      
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    border-bottom: 1px solid #9a7e7e;
+    margin:0px;
+    padding: 20px;
+    
+}
+ .topbar .topbar_title{
+    color: #c52929;
+ }
+ .topbar .topbar_office,
+ .topbar_email,
+ .topbar_contact{
+    font-weight: bold;
+    font-size: 25px;
+    padding: 2px;
+    display: flex;
+ }
+
+ .topbar .topbar_office .office_image 
+ .topbar_email .email_image,
+ .topbar_contact .contact_image{
+    align-items: center;
+ }
+
+ .topbar .topbar_contact{
+    margin-right: 20px;
+ }

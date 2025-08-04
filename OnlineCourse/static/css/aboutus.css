@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    
+}
+
+.aboutus-heading{
+    text-align: center;
+    color: rgb(245, 8, 8);
+    padding: 10px;
+    font-weight: bolder;
+    font-size: 30px;
+    margin-top: 60px;
+}
+
+.aboutus-heading hr{
+    
+     border: 1px solid #f0eded;
+
+}
+.aboutus{
+    display: flex;
+    height: 1000px;
+    
+}
+
+.aboutus .aboutus-image img{
+    width:700px;
+   height: 1070px;
+    padding: 30px;
+    margin-left: 30px;
+}
+.aboutus-text button{
+  
+    font-size: 20px;
+    color: aliceblue;
+    font-weight:bolder;
+    background-color: #ed4406;
+    border:none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 40px;
+}
+.aboutus .aboutus-text{
+   margin-left: 50px;
+   text-align: justify;
+   
+}
+.aboutus .aboutus-text .aboutus-title{
+    font-size:30px;
+    font-weight: bold;
+    padding: 20px 0;
+}
+.aboutus .aboutus-text .aboutus-content{
+    font-size:20px;
+    line-height: 40px;
+}
+.aboutus .aboutus-text .aboutus-content h4{
+    padding: 20px 0;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+{%load static %}
+<link rel="stylesheet" href="{% static 'css/courses2a.css' %}">
+
+<head>
+
+    <title>ECOURSES </title>
+</head>
+
+<body>
+    {% include 'templates/navbar.html' %}
+    <div class="courses-content">
+        <h2>Scratch Programming - Start Coding with Fun!</h2>
+        <p><b>Level:</b> Beginner<br>
+            <b>Duration:</b> 4 Weeks<br>
+            <b>Age Group:</b> 7-14 Years<br>
+        </p>
+        <h3>Course Overview:</h3>
+        <p>Designed especially for kids and coding beginners, this course teaches the basics of programming using
+            Scratch, a fun drag-and-drop coding platform. Learn to create games, stories, and animations without
+            typing any code!</p>
+        <h3>What You'll Learn:</h3>
+        <ul>
+            <li>Introduction to the Scratch interface</li>
+            <li>Creating animated stories</li>
+            <li>Building simple games</li>
+            <li>Understanding loops, conditions, and events</li>
+            <li>Designing characters and adding sounds</li>
+            <li>Completing creative coding challenges</li>
+        </ul>
+        <h3>Who Should Join:</h3>
+        <p>Kids and absolute beginners who want to develop logical thinking and creativity through coding.
+        </p>
+        <h3>Course Fee:</h3>
+        <p>2,000 INR
+        </p>
+        <button onclick="location.href='/enquiry'">Enquire Now</button>
+    </div>
+
+    {% include 'templates/footer.html' %}
+</body>
+
+</html>

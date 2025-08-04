@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+{%load static %}
+<link rel="stylesheet" href="{% static 'css/courses3a.css' %}">
+
+<head>
+
+    <title>ECOURSES </title>
+</head>
+
+<body>
+    {% include 'templates/navbar.html' %}
+    <div class="courses-content">
+        <h2>Front-End Development - Build Stunning Websites</h2>
+        <p><b>Level:</b> Beginner to Intermediate<br>
+            <b>Duration:</b> 5 Weeks<br>
+            <b>Prerequisites:</b> Basic computer skills required<br>
+        </p>
+        <h3>Course Overview:</h3>
+        <p>Dive into the world of web design! Learn how to create responsive, modern websites using HTML, CSS, and
+            JavaScript. This course covers the fundamentals of front-end development, empowering you to turn your
+            designs into live, interactive web pages.</p>
+        <h3>What You'll Learn:</h3>
+        <ul>
+            <li>Structure web pages with HTML5</li>
+            <li>Style and layout using CSS3</li>
+            <li>Add interactivity with JavaScript</li>
+            <li>Responsive design for mobile and desktop</li>
+            <li>Building a personal portfolio site</li>
+            <li>Introduction to developer tools and version control</li>
+        </ul>
+        <h3>Who Should Join:</h3>
+        <p>Anyone interested in learning how websites work — ideal for beginners, students, and future web
+            developers.
+        </p>
+        <h3>Course Fee:</h3>
+        <p>3,000 INR
+        </p>
+        <button onclick="location.href='/enquiry'">Enquire Now</button>
+    </div>
+    {% include 'templates/footer.html' %}
+</body>
+
+</html>

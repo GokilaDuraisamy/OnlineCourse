@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+{%load static %}
+<link rel="stylesheet" href="{% static 'css/home1.css' %}">
+
+<head>
+
+    <title>ECOURSES </title>
+</head>
+
+<body>
+    <div class="home-image">
+        <img src="{% static 'images/carousel-1.jpg' %}">
+        <p class="home-text-small">Best Online Courses</p>
+        <p class="home-text-big">Best online Learning platform</p>
+        <button onclick="scrollTocourses()">Learn More</button>
+    </div>
+
+<script>
+        function scrollTocourses() {
+            const coursesSection = document.getElementById('courses-section');
+            if (coursesSection) {
+                coursesSection.scrollIntoView({ behavior: 'smooth' });
+                coursesSection.style.marginTop = "150px";
+            }
+        }
+    </script>
+</body>
+
+</html>
